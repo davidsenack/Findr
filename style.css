@@ -102,23 +102,6 @@ header {
   cursor: pointer;
 }
 
-#view-more-btn {
-  background-color: #0E67B4;
-  color: #F7F3E8;
-  font-family: Lato, sans-serif;
-  font-size: 15px;
-  padding: .5rem;
-  border: none;
-  border-radius: .4rem;
-  margin-top: 1rem;
-}
-
-#view-more-btn:hover {
-  background-color: #F7F3E8;
-  color: #0E67B4;
-  cursor: pointer;
-}
-
 /* VIEW MORE NAV STYLES */
 
 #view-more-container {
@@ -130,18 +113,20 @@ header {
 }
 
 #view-more-btn {
-  border: #0E67B4 1px solid;
-  color: #F7F3E8;
+  border: #0E67B4 2px solid;
+  color:#0E67B4;
+  background-color: #F7F3E8;
   font-family: Lato, sans-serif;
   font-size: 15px;
   padding: .5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  border: none;
   border-radius: .4rem;
   margin-top: 1rem;
 }
 
 #view-more-btn:hover {
+  color: #F7F3E8;
+  background-color: #0E67B4;
   cursor: pointer;
 }
