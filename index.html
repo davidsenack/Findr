@@ -16,7 +16,7 @@
     <!-- <h1 id="big-title">Image Search</h1> -->
     <img src="imgs/Findr-logos.jpeg" alt="" id="header-logo">
     <form onsubmit="return false" method="post" id="search-form">
-      <input type="text" name="search" placeholder="nature" id="search-bar">
+      <input type="text" name="search" placeholder="Search..." id="search-bar">
       <button type="submit" id="search-btn" onclick="rep()"><img src="imgs/search.png" alt="" id="search-icon"></button>
     </form>
   </header>
@@ -85,13 +85,14 @@
     <p>Image Search &copy; 2021</p>
   </footer>
   <script>
+    var prevSearchTerm = "nature";
+
     function rep() {
-        let prevSearchTerm = document.getElementById("search-bar").placeholder;
         let newSearchTerm = document.getElementById("search-bar").value;
         document.body.innerHTML
             = document.body.innerHTML
             .replaceAll(prevSearchTerm, newSearchTerm);
-        document.getElementById("search-bar").placeholder = newSearchTerm;
+        prevSearchTerm = newSearchTerm;
     }
   </script>
   <!-- <script src="script.js"></script> -->
