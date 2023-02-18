@@ -1,3 +1,7 @@
 # ignore TODO.md
 
 TODO.md
+
+# ignore DS.store
+
+.DS_Store
