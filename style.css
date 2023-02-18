@@ -23,6 +23,7 @@ header {
 
   background-color: #0E67B4;
   color: #F7F3E8;
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.75);
 
   font-family: Lato, sans-serif;
 }
@@ -73,14 +74,25 @@ header {
 
 #image-grid-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  padding-top: 12%;
+  padding-top: 150px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.img-row img:hover {
+#image-grid-container img {
+  width: 25%;
+  height: 25%;
+  max-width: 250px;
+  max-height: 250px;
+  margin: .5rem;
+  flex-basis: 1;
+
+}
+#image-grid-container img:hover {
   cursor: pointer;
 }
 
@@ -100,3 +112,4 @@ header {
   color: #0E67B4;
   cursor: pointer;
 }
+
