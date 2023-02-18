@@ -13,10 +13,8 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 3%;
+  flex-direction: row;
+  justify-content: left;
 
   background-color: #0E67B4;
   color: #F7F3E8;
@@ -24,11 +22,9 @@ header {
   font-family: Lato, sans-serif;
 }
 
-h1#big-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+#header-logo {
+    width: 100px;
+    height: 100px;
 }
 
 #search-form {
@@ -46,8 +42,7 @@ h1#big-title {
 #search-bar {
   border-top-left-radius: .4rem;
   border-bottom-left-radius: .4rem;
-  padding-left: 10px;
-  margin-left: 1%;
+  padding-left: 10px; */
   outline: none;
 }
 
