@@ -15,66 +15,66 @@
   <header>
     <!-- <h1 id="big-title">Image Search</h1> -->
     <img src="imgs/Findr-logos.jpeg" alt="" id="header-logo">
-    <form action="search.php" method="get" id="search-form">
+    <form onsubmit="return false" method="post" id="search-form">
       <input type="text" name="search" placeholder="nature" id="search-bar">
-      <button type="submit" id="search-btn"><img src="imgs/search.png" alt="" id="search-icon"></button>
+      <button type="submit" id="search-btn" onclick="rep()"><img src="imgs/search.png" alt="" id="search-icon"></button>
     </form>
   </header>
   <section id="image-grid-container">
     <div id="img-grid">
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/1" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/2" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/3" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/4" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/1" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/2" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/3" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/4" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/5" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/6" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/7" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/8" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/5" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/6" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/7" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/8" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/9" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/10" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/11" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/12" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/9" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/10" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/11" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/12" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/13" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/14" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/15" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/16" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/13" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/14" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/15" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/16" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/17" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/18" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/19" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/20" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/17" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/18" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/19" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/20" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/21" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/22" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/23" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/24" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/21" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/22" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/23" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/24" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/25" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/26" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/27" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/28" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/25" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/26" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/27" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/28" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/29" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/30" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/31" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/32" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/29" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/30" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/31" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/32" alt="unsplash image" class="grid-img">
       </div>
       <div class="img-row">
-        <img src="https://source.unsplash.com/random/200x200/?nature/33" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/34" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/35" alt="unsplash image">
-        <img src="https://source.unsplash.com/random/200x200/?nature/36" alt="unsplash image">
+        <img src="https://source.unsplash.com/random/200x200/?nature/33" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/34" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/35" alt="unsplash image" class="grid-img">
+        <img src="https://source.unsplash.com/random/200x200/?nature/36" alt="unsplash image" class="grid-img">
       </div>
     </div>
     <nav id="more-container">
@@ -84,6 +84,16 @@
   <footer>
     <p>Image Search &copy; 2021</p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    function rep() {
+        let prevSearchTerm = document.getElementById("search-bar").placeholder;
+        let newSearchTerm = document.getElementById("search-bar").value;
+        document.body.innerHTML
+            = document.body.innerHTML
+            .replaceAll(prevSearchTerm, newSearchTerm);
+        document.getElementById("search-bar").placeholder = newSearchTerm;
+    }
+  </script>
+  <!-- <script src="script.js"></script> -->
 </body>
 </html>
