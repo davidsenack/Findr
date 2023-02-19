@@ -9,7 +9,6 @@
   <meta name="author" content="David Senack">
 
   <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
   <title>Findr Image Search</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
     <img src="imgs/Findr-logos_white.png" alt="" id="header-logo">
     <form onsubmit="return false" method="post" id="search-form">
       <input type="text" name="search" placeholder="Search..." id="search-bar">
-      <button type="submit" id="search-btn" onclick="rep()"><img src="imgs/search.png" alt="" id="search-icon"></button>
+      <button type="submit" id="search-btn" onclick="newSearch()"><img src="imgs/search.png" alt="" id="search-icon"></button>
     </form>
   </header>
   <section id="image-grid-section">
@@ -67,5 +66,6 @@
   <footer>
     <p>Image Search &copy; 2021</p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
