@@ -40,6 +40,27 @@ function removeChildren(parent) {
   };
 };
 
+// Functions to shrink header on scroll
+function smallHeader() {
+  document.querySelector("header").style.height = "0px";
+  document.getElementById("header-logo").style.height = "35px";
+  document.querySelector("header").style.backgroundColor = "rgba(14, 103, 180, 0.8)";
+}
+
+function largeHeader() {
+  document.querySelector("header").style.height = "70px";
+  document.getElementById("header-logo").style.height = "50px";
+  document.querySelector("header").style.backgroundColor = "#0E67B4";
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    smallHeader();
+  } else {
+    largeHeader();
+  };
+};
+
 // EVENT LISTENERS
 
 // Run pageInit function on page load
@@ -47,3 +68,6 @@ window.onload = pageInit();
 
 // Listen for 'view more' button click
 document.getElementById("view-more-btn").onclick = function() {viewMore()};
+
+// Listen for scroll event
+window.onscroll = function() {scrollFunction()};
