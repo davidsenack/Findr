@@ -81,6 +81,12 @@ header {
 
 /* MAIN STYLES */
 
+#image-grid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #image-grid-container {
   display: flex;
   flex-direction: row;
