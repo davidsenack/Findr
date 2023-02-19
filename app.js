@@ -22,7 +22,7 @@ function newSearch() {
 // Function to run on view more button click
 // Creates 36 new images and appends them to the image grid container
 function viewMore() {
-  for (let i = 0; i < 36; i++) {
+  for (let i = 0; i < 72; i++) {
     let imgNum = Math.floor(Math.random() * 10000);
     let newImg = document.createElement("img");
 
