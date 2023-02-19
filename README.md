@@ -7,3 +7,5 @@ images based on those keywords.
 This is a personal project for learning more about HTML, CSS and vanilla Javascript. A few more 
 functions may be added at a later date.
 
+This site is availble to view live [here](davidsenack.github.io/image-search).
+
