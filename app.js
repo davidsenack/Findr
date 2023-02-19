@@ -1,5 +1,5 @@
 // GLOBAL VARIABLES
-var currentSearchTerm = "nature";
+var currentSearchStr = ["nature"];
 
 
 // FUNCTIONS
@@ -14,7 +14,8 @@ function pageInit() {
 // Function to get results for new search
 // Clears image grid and runs pageInit function with new 
 function newSearch() {
-  currentSearchTerm = document.getElementById("search-bar").value;
+  let originalSearchString = document.getElementById("search-bar").value;
+  currentSearchStr = originalSearchString.split(" ").join("+");
   pageInit();
 };
 
@@ -22,10 +23,10 @@ function newSearch() {
 // Creates 36 new images and appends them to the image grid container
 function viewMore() {
   for (let i = 0; i < 36; i++) {
-    let imgNum = Math.floor(Math.random() * 1000);
+    let imgNum = Math.floor(Math.random() * 10000);
     let newImg = document.createElement("img");
 
-    newImg.src = "https://source.unsplash.com/random/1080x1080/?" + currentSearchTerm + "/" + imgNum;
+    newImg.src = "https://source.unsplash.com/random/1080x1080/?" + currentSearchStr + "/" + imgNum;
     newImg.className = "grid-img";
     newImg.alt = "unsplash image";
     document.getElementById("image-grid-container").appendChild(newImg);
