@@ -3,17 +3,16 @@ var prevSearchTerm = "nature";
 
 // Function to run on page load and new search
 function pageInit() {
-  // Do something.
-}
+  removeChildren(document.getElementById("image-grid-container"));
+  viewMore();
+};
 
 // Function to run get results for new search
 function newSearch() {
   let newSearchTerm = document.getElementById("search-bar").value;
-  document.body.innerHTML
-      = document.body.innerHTML
-      .replaceAll(prevSearchTerm, newSearchTerm);
   prevSearchTerm = newSearchTerm;
-}
+  pageInit();
+};
 
 // Function to run on view more button click
 function viewMore() {
@@ -24,8 +23,16 @@ function viewMore() {
     newImg.className = "grid-img";
     newImg.alt = "unsplash image";
     document.getElementById("image-grid-container").appendChild(newImg);
-  }
-}
+  };
+};
 
-// Event listener on click of search button
-document.getElementById("view-more-btn").onclick = viewMore();
+// Function to remove all children of a parent element
+function removeChildren(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  };
+};
+
+// Run pageInit function on page load
+window.onload = pageInit();
+document.getElementById("view-more-btn").onclick = function() {viewMore()};
