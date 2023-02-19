@@ -35,7 +35,6 @@ header {
     width: 60px;
     height: 60px;
     object-fit: contain;
-    padding-right: 2%;
     align-items: center;
 }
 
@@ -54,15 +53,17 @@ header {
 #search-bar {
   border-top-left-radius: .4rem;
   border-bottom-left-radius: .4rem;
-  padding-left: 10px;
+  padding-left: 12px;
+  margin-left: 20px;
   outline: none;
+  width: 500px;
 }
 
 #search-btn {
   border-top-right-radius: .4rem;
   border-bottom-right-radius: .4rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   background-color: #FFFFFF;
 }
 
